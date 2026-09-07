@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Sentinel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="pulse"></span><div><p class="eyebrow">BINANCE AGENT OS / TRACK A</p><h1>Portfolio Sentinel</h1></div></div>
+      <div class="mode"><span class="mode-dot"></span>SIMULATION MODE</div>
+    </header>
+    <section class="hero-grid">
+      <div class="hero-copy"><p class="eyebrow">RISK OPERATIONS CONSOLE</p><h2>Observe clearly.<br><em>Act deliberately.</em></h2><p class="lede">A deterministic risk monitor that investigates portfolio deterioration, explains the evidence, and waits for your approval before acting.</p><button id="scan" class="primary"><span>Run portfolio scan</span><b>></b></button></div>
+      <div class="score-panel"><div class="panel-label">COMPOSITE RISK</div><div class="score-line"><strong id="score">--</strong><span>/ 100</span></div><div class="risk-tier" id="tier">Awaiting scan</div><div class="meter"><i id="meter"></i></div><div class="panel-foot"><span>STATE</span><b id="state">MONITORING</b></div></div>
+    </section>
+    <section class="content-grid">
+      <div class="column"><div class="section-head"><h3>Verified evidence</h3><span id="timestamp">No scan yet</span></div><div id="evidence" class="evidence-list"><div class="empty">Run a scan to inspect verified portfolio signals.</div></div></div>
+      <aside class="column action-column"><div class="section-head"><h3>Decision</h3><span class="lock">APPROVAL GATED</span></div><div id="decision" class="decision"><div class="empty">No recommendation is active.</div></div><button id="approve" class="approve" disabled>Approve proposed action <span>></span></button><button id="emergency" class="emergency">Emergency Stop</button><p id="message" class="message"></p></aside>
+    </section>
+    <section class="audit-section"><div class="section-head"><h3>Audit trail</h3><span>IMMUTABLE SESSION LOG</span></div><div id="audit" class="audit-list"><div class="empty">Events will appear here.</div></div></section>
+  </main>
+  <script src="/dashboard.js"></script>
+</body>
+</html>
